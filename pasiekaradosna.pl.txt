@@ -12,10 +12,11 @@ podstawowe funkcje
 		- exprot danych
 		- import danych
 
-		pasieki:
-			-stworzenie nowej pasieki
-			-wylistowanie wszystkich
-			-usuniecie pasieki
+		-stworzenie nowej pasieki
+		-wylistowanie wszystkich
+		-usuniecie pasieki
+
+		pasieka:
 			- przenies pasieke
 			ule:
 				- system
