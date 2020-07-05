@@ -1,0 +1,166 @@
+Domena: Pasieka Radosna.pl
+nazwa: menadzer pasieki
+ikona: #todo
+minimalna wersja: 4.4.2
+
+lokalnie klient na androida
+potem może serwer i aktualizacja
+
+
+podstawowe funkcje
+	wlasciel:
+		- exprot danych
+		- import danych
+
+		pasieki:
+			-stworzenie nowej pasieki
+			-wylistowanie wszystkich
+			-usuniecie pasieki
+			- przenies pasieke
+			ule:
+				- system
+				- stan rozrodu
+					-rodzina z matka:
+						-plodnosc
+							unasienniona sztucznie
+							unasienniona naturalnie
+							nieunasienniona
+						- rasa
+						- linia
+						- pochodzenie
+							rojowa
+							zakupiona
+							wychodowana
+						- rok
+						-czy oznaczona
+						- nr opalitka
+						- przeznaczenie
+							uzytkowa (def)
+							reprodukcyjna (def)
+							zarodowa (def)
+							- zarzadzanie przeznaczeniem
+					-rodzina bezmateczna
+						czas / data osierocenia:
+					- trutówki
+				-nr / tag: 
+				- pochodzenie ula:
+					zakupiony
+					wlasnej produkcji
+				-struktura ula:
+					-koprusowy / stojak :
+						- ile korpusów gniazdowych
+						- ile nadstawek
+						- ile ramek
+						-dennica:
+							pelna
+							osiatkowana
+						- materiał wykonania:
+						- ocieplenie: tak/nie
+
+						rodzaje:
+							odkład
+							rodzina dorosła
+							ulik weselny
+						- czy przegonka jest na miodni
+
+				-przeglądy:
+					-czas przegladu
+					- czy matka jest jak w opisie ula
+					- mateczniki:
+						rojowe
+						ratunkowe
+						brak
+					-jajeczka
+					-czerw otwarty
+					-zasklepiony
+					-czy czerw rozstrzelony
+					-trutowy
+					- nakrop
+					- miód zasklepiony
+						ilosc ramek
+					- pierzga
+					-sila rodziny:
+						słaba
+						srednia
+						silna
+						bardzo silna
+						#ew. fibb 1 2 3 5 8 13
+					- zachowanie:
+						nerwowe
+						nerwowe+
+						agresywne
+						agresywne+
+						spokojne
+						pobudzone
+					- karmienie:
+						rodzaj pokarmu:
+						zjedzone: %
+					- zauważone choroby
+					- uwagi do przegladu
+					- dodanie do listy do zrobienia
+				- miodobranie:
+					- ilosc ramek
+					- waga miodu
+					- rodzaj miodu
+					- kolor
+				- karmienie:
+					-czym
+					-ile 
+					- deadline szamy
+				- leczenie
+					-czym
+					-kiedy
+					-usuwane z gniazda:
+						waroza: (domyslne)
+						motylica:
+						zgnilec europejski
+						zgnilec amerykański
+						//i caly atlas
+					- kolejny raz
+					
+			- łączenie rodzin
+			- wykonanie odkladu
+	- lista do zrobienia
+		-wypisanie:
+			najwyższy priorytet
+			najwczesniejszy koniec
+		dodanie wpisu
+
+-obserwacje kwitnienia
+	na podstawie lokalizacji start kwitnienia 
+	i zakonzenie kwitnienia dla dancyh obszarow
+	mapa polski gdzie co kwitnie
+magazyn pszczelarski:
+	korpusy
+	ramki puste
+	ramki z suszem
+	ramki z pokarmem
+	ramki z pierzgą
+	ramki z węzą
+	zatwory
+	dennice
+	daszki
+	stojaki
+	węza (kg)
+	# krata odgrodowa
+	# krata propolisowa
+	powałka
+	# podkatmiaczka ramkowa
+	# podkatmiaczka powałkowa
+	wylotki
+	# poławiacze pyłku 
+	wiadra na miód:
+		pojemnosc kg / l miodu
+
+	drut do ramek
+	leki:
+		~~~~~~~~~~~~~~~~~~~
+		~~~~~~~~~~~~~~~~~~~
+		~~~~~~~~~~~~~~~~~~~
+		~~~~~~~~~~~~~~~~~~~
+		~~~~~~~~~~~~~~~~~~~
+		~~~~~~~~~~~~~~~~~~~
+		~~~~~~~~~~~~~~~~~~~
+		~~~~~~~~~~~~~~~~~~~
+		~~~~~~~~~~~~~~~~~~~
+planowane zakupy			
