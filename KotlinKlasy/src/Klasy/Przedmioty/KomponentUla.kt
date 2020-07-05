@@ -5,4 +5,10 @@ class KomponentUla : Przedmiot{
     constructor(nazwa:String, system : String):super(nazwa){
         this.system = system
     }
+
+    override fun toString(): String {
+        return "nazwa: "+super.nazwa+" system: "+this.system
+    }
+
+
 }

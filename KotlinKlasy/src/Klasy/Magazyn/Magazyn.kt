@@ -6,7 +6,8 @@ import java.util.*
 
 class Magazyn {
     private var storage : Vector<Pair<Przedmiot,Int>> = Vector()
-
+    val dane: Vector<Pair<Przedmiot,Int>>
+        get() = this.storage
     fun dodajDoMagazynu(przedmiot: Przedmiot,ilosc : Int){
 
         if (ilosc < 1){
@@ -28,11 +29,8 @@ class Magazyn {
         }
     }
 
-    fun getStorage(): Vector<Pair<Przedmiot,Int>>{
-        return this.storage
-    }
 
-    fun getIloscPrzedmiotu(przedmiot: Przedmiot): Int{
+    fun iloscPrzedmiotu(przedmiot: Przedmiot): Int{
         for( i in 0 until this.storage.size)
         {
             if(storage[i].first.equals(przedmiot))

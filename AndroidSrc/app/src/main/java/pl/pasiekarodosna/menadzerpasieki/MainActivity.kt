@@ -1,10 +1,11 @@
 package pl.pasiekarodosna.menadzerpasieki
 
+import Klasy.Komponenty.Przedmiot
+import Klasy.Ule.Magazyn
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_main.view.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +15,11 @@ class MainActivity : AppCompatActivity() {
 
         var text: TextView = findViewById(R.id.textview)
         var button: Button = findViewById(R.id.buttontest)
+
+        var magazyn: Magazyn = Magazyn()
+
+
+
         button.text = "############"
         button.setOnClickListener{
 
@@ -24,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         }
         button.setOnLongClickListener {
             text.text = "0"
+            magazyn.dodajDoMagazynu(Przedmiot("123"),1)
             true
         }
 
