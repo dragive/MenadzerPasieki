@@ -1,25 +1,25 @@
 package Klasy.Matecznosc
 
 import Klasy.Exceptions.nieprawidloweDaneException
-import Klasy.Exceptions.ujemnaWartoscIntException
 import Klasy.Exceptions.zakrotkiStringException
-import Klasy.Exceptions.zamalaWartoscIntException
+
 
 class Matka : StanRozrodu  {
-    private var rasa : String = ""
-    var rasaMatki :String
-        get() = this.rasa
-        set(value:String){
-            if(value.length == 0 )
-                throw zakrotkiStringException()
-            this.rasa = value
+    private var Rasa : String = ""
+    var rasa: String
+        get() = this.Rasa
+        set(value){
+            if (value.length == 0 ) throw zakrotkiStringException()
+            this.Rasa = value
         }
+    var rokWygryzienia: Int = 2000
 
-    var rok: Int = 2000
+    var dataPodania: String = ""
     var linia: String = ""
     var czyOznaczona: Boolean = false
     var przeznaczenie: String = ""
     var zaplodniona: Boolean = false
+    var plodnosc: String  = ""
 
     constructor(): super() {
     }

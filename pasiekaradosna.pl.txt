@@ -1,7 +1,7 @@
 Domena: Pasieka Radosna.pl
 nazwa: menadzer pasieki
 ikona: #todo
-minimalna wersja: 4.4.2
+minimalna wersja: 7,0
 
 lokalnie klient na androida
 potem może serwer i aktualizacja
