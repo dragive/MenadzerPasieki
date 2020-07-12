@@ -1,5 +1,5 @@
 package Klasy.Komponenty
 
 class Narzedzie : Przedmiot{
-    constructor(nazwa : String):super(nazwa)
+    constructor(nazwa : String,opis : String = ""):super(nazwa,opis)
 }

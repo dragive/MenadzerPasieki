@@ -32,7 +32,8 @@ podstawowe funkcje
 							rojowa
 							zakupiona
 							wychodowana
-						- rok
+						- rokWygryzienia
+						- dataPodania
 						-czy oznaczona
 						- nr opalitka
 						- przeznaczenie

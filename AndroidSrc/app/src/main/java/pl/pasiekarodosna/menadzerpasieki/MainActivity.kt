@@ -1,42 +1,32 @@
 package pl.pasiekarodosna.menadzerpasieki
 
-import Klasy.Komponenty.Przedmiot
-import Klasy.Ule.Magazyn
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
+import android.os.Handler
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        supportActionBar?.hide()
+        
+            }
 
+    override fun onStart() {
+        super.onStart()
 
-        var text: TextView = findViewById(R.id.textview)
-        var button: Button = findViewById(R.id.buttontest)
+        val r = Runnable {
 
-        var magazyn: Magazyn = Magazyn()
-
-
-
-        button.text = "############"
-        button.setOnClickListener{
-
-            var tekst: String = text.text.toString()
-            var liczba: Int = tekst.toInt()
-            text.text = (liczba+1).toString()
-
+            startActivity(Intent(this, EkranGlowny::class.java))
+            finish()
         }
-        button.setOnLongClickListener {
-            text.text = "0"
-            magazyn.dodajDoMagazynu(Przedmiot("123"),1)
-            true
-        }
+        val h = Handler()
+
+        h.postDelayed(r, 2500)
 
 
-
-        }
+    }
     }
 
 

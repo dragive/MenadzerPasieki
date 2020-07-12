@@ -8,6 +8,7 @@ class Magazyn {
     private var storage : Vector<Pair<Przedmiot,Int>> = Vector()
     val dane: Vector<Pair<Przedmiot,Int>>
         get() = this.storage
+
     fun dodajDoMagazynu(przedmiot: Przedmiot,ilosc : Int){
 
         if (ilosc < 1){
@@ -27,6 +28,16 @@ class Magazyn {
         for (i in 0 until wielePrzedmiotow.size){
             dodajDoMagazynu(wielePrzedmiotow[i].first,wielePrzedmiotow[i].second)
         }
+    }
+
+    fun sprawdzCzyJestWMagazynie(przedmiot: Przedmiot){
+        for (i in dane){
+            if(i.first == przedmiot)TODO("Dokonczenie#####################################")
+        }
+    }
+
+    fun usunZMagazynu(przedmiot: Przedmiot){
+
     }
 
 

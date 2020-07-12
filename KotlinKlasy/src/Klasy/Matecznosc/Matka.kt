@@ -21,8 +21,8 @@ class Matka : StanRozrodu  {
     var zaplodniona: Boolean = false
     var plodnosc: String  = ""
 
-    constructor(): super() {
-    }
+    constructor(): super()
+    constructor(opis : String ):super(opis)
 
 
 

@@ -5,7 +5,7 @@ import Klasy.Exceptions.nieprawidloweDaneException
 import Klasy.Exceptions.nieprawidlowyIntException
 import Klasy.Exceptions.zaduzaWartoscIntException
 import Klasy.Exceptions.zamalaWartoscIntException
-import kotlin.test.todo
+import java.time.LocalDateTime
 
 class Data {
 
@@ -49,23 +49,34 @@ class Data {
         }
 
 
-
     constructor(rok: Int, miesiac: Int, dzien: Int){
         this.rok = rok
         this.miesiac = miesiac
         this.dzien = dzien
     }
+
     constructor(){
         this.Rok = null
         this.Miesiac = null
         this.Dzien = null
     }
+
     constructor(data : String){
         var tab = parserFromString(data)
         this.rok = tab[0]
         this.miesiac = tab[1]
         this.dzien = tab[2]
         this.sprawdzPoprawoscFormatuDaty()
+    }
+
+
+    fun nrDniaTygodnia(): Int{
+        val miesiac: Int = this.miesiac!!
+        val rok: Int = this.rok!!
+        val C = rok / 100
+        var Y = rok % 100
+        if (miesiac == 1 || miesiac == 2) Y--
+        return (this.dzien!! + (2.6 * ((miesiac - 3 + 12) % 12 + 1) - 0.2).toInt() - 2 * C + Y + Y / 4 + C / 4 + 6) % 7 + 1
     }
 
 
@@ -130,4 +141,19 @@ class Data {
         return ret
     }
 
+    fun dzisiejszaData(): Array<Any> {
+        val current = LocalDateTime.now()
+        return arrayOf(current.year,current.month,current.dayOfMonth)
+    }
+
+    fun ustawDzisiejszaDate(){
+        var dzisiaj = dzisiejszaData()
+        this.rok = dzisiaj[0] as Int?
+        this.miesiac = dzisiaj[1] as Int?
+        this.dzien = dzisiaj[2] as Int?
+    }
+
 }
+
+
+
