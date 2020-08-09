@@ -3,6 +3,7 @@ package pl.pasiekarodosna.menadzerpasieki
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -18,15 +19,17 @@ class MainActivity : AppCompatActivity() {
 
         val r = Runnable {
 
-            startActivity(Intent(this, EkranGlowny::class.java))
+            startActivity(Intent(this, KonsolaActivity::class.java))
             finish()
         }
         val h = Handler()
 
-        h.postDelayed(r, 2500)
+        h.postDelayed(r, 100)
 
 
     }
+
+
     }
 
 
