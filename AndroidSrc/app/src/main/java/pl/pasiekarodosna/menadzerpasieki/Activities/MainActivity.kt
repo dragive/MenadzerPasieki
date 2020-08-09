@@ -1,10 +1,10 @@
-package pl.pasiekarodosna.menadzerpasieki
+package pl.pasiekarodosna.menadzerpasieki.Activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
+import pl.pasiekarodosna.menadzerpasieki.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

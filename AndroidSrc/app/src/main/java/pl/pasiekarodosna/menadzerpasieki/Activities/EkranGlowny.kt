@@ -1,9 +1,10 @@
-package pl.pasiekarodosna.menadzerpasieki
+package pl.pasiekarodosna.menadzerpasieki.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.ekran_glowny.*
+import pl.pasiekarodosna.menadzerpasieki.R
 
 class EkranGlowny : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +15,8 @@ class EkranGlowny : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         var x =doKonsoli.setOnClickListener{
-            startActivity(Intent(this,KonsolaActivity::class.java))
+            startActivity(Intent(this,
+                KonsolaActivity::class.java))
             finish()
         }
     }
