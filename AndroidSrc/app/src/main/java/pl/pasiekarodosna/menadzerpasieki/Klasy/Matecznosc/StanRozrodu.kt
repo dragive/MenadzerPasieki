@@ -1,8 +1,12 @@
 package Klasy.Matecznosc
 
 abstract class StanRozrodu {
-
+    var opis : String = ""
     constructor(){
-        //todo
+        this.opis = ""
+    }
+    constructor(opis : String)
+    {
+        this.opis = opis
     }
 }

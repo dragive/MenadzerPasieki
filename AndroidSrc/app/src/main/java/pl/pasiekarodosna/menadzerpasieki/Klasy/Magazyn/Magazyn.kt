@@ -6,6 +6,8 @@ import java.util.*
 
 class Magazyn {
     private var storage : Vector<Pair<Przedmiot,Int>> = Vector()
+    val dane: Vector<Pair<Przedmiot,Int>>
+        get() = this.storage
 
     fun dodajDoMagazynu(przedmiot: Przedmiot,ilosc : Int){
 
@@ -28,11 +30,18 @@ class Magazyn {
         }
     }
 
-    fun getStorage(): Vector<Pair<Przedmiot,Int>>{
-        return this.storage
+    fun sprawdzCzyJestWMagazynie(przedmiot: Przedmiot){
+        for (i in dane){
+            if(i.first == przedmiot)TODO("Dokonczenie#####################################")
+        }
     }
 
-    fun getIloscPrzedmiotu(przedmiot: Przedmiot): Int{
+    fun usunZMagazynu(przedmiot: Przedmiot){
+
+    }
+
+
+    fun iloscPrzedmiotu(przedmiot: Przedmiot): Int{
         for( i in 0 until this.storage.size)
         {
             if(storage[i].first.equals(przedmiot))
